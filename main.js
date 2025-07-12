@@ -10,7 +10,7 @@ console.log(fourthTeacher);
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 // utilizzo splice che aggiunge/rimuove elementi e può sovrascrivere l'array originale, che chiede di sapere il punto di partenza, in questo caso volendo sostituire il 5° insegnante l'indice è 4, poi ci chiede nti elementi deve eliminare in questo caso è 1 e infine ciò con cui deve essere sostituito 'Patrick'
-const fifthTeacher = teachers.splice(4, 1, "Patrick");
+teachers.splice(4, 1, "Patrick");
 console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
