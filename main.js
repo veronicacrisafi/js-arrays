@@ -14,13 +14,16 @@ const fifthTeacher = teachers.splice(4, 1, "Patrick");
 console.log(teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-//Per rimuovere l'ultimo elemento dell'array utilizzo la funzionalità pop()
+//Per rimuovere l'ultimo elemento dell'array utilizzo la funzionalità pop() non necessita di inserire l'elemento nelle parentesi prende direttamente l'ultimo elemento
 const lastTeacher = teachers.pop();
 console.log(lastTeacher);
 console.log(teachers);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+//Per rimuovere  il primo elemento dell'array utilizzo la funzionalità shift() non necessita di inserire l'elemento nelle parentesi prende direttamente il primo elemento
+const firstTeacher = teachers.shift();
+console.log(firstTeacher);
+console.log(teachers);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
