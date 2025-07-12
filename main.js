@@ -37,7 +37,9 @@ console.log(teachers);
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+//per trovare l'indice di un array uso indexOf e all'interno delle parentesi inserisco il nome dell'elemento per la quale mi serve sapere il valore dell'indice
+const lewisIndex = teachers.indexOf("Lewis");
+console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
