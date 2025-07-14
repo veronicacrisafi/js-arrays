@@ -43,11 +43,10 @@ console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-//ho usato il ciclo for per verificare gli elementi all'interno dell'array
-for (let i = 0; i < teachers.length; i++) {
-  const isTeachersEmpty = teachers[i];
-  console.log(isTeachersEmpty);
-}
+//uso length per cercare all'interno dell'array se sia vuota o piena e utilizo === 0 per confrontare se la lunghezza dell'array è 0
+
+const isTeachersEmpty = teachers.length === 0;
+console.log(isTeachersEmpty);
 
 //BONUS
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
