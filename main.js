@@ -70,11 +70,9 @@ console.log(longNames);
 // 3. Rimuovi 'Ed' dall'array teachers
 // ho cercato il valore dell'indice tramite indexOf
 const ed_index = teachers.indexOf("Ed");
-console.log(ed_index);
 //uso splice per rimuovere l'elemento Ed
-teachers.splice(5, 1);
+teachers.splice(ed_index, 1);
 console.log(teachers);
-
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
