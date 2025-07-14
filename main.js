@@ -76,17 +76,10 @@ console.log(teachers);
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
-//PROCEDIMENTO
-// lascio vuoto il nuovo array affinché venga riempito con il valore trovato tramite il ciclo for
-// Nel ciclo for vado a chiedere di cercare la "i" all'interno della lunghezza dell'array teachers
-// utilizzo il minore perché altrimenti non mi troverebbe nulla se mettessi la ricerca per i valori maggiori "quindi fuori dal mio array" e vado per incremento con i++.
-// Uso una dichiarazione condizionale "if" con la condizione di trovarmi il valore di [i] all'interno dell'array teachers che sia uguale per valore e tipo === all'elemento di cui ho bisogno
-// nel blocco di codice chiedo di aggiungere alla lista tramite "push" il valore di [i] nell'array teachers che ha trovato tramite la condizione precedente
-const isFabioPresent = [];
-for (let i = 0; i < teachers.length; i++) {
-  if (teachers[i] === "Fabio") {
-    isFabioPresent.push(teachers[i]);
-  }
+if (teachers.indexOf("Fabio") !== -1) {
+  console.log("Fabio è presente");
+} else {
+  console.log("non è presente");
 }
 console.log(isFabioPresent);
 
