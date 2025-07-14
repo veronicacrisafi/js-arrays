@@ -48,3 +48,52 @@ for (let i = 0; i < teachers.length; i++) {
   const isTeachersEmpty = teachers[i];
   console.log(isTeachersEmpty);
 }
+
+//BONUS
+// 1. Inverti l'ordine degli insegnanti nell'array teachers
+// e salva il risultato nella variabile reversedTeachers
+
+// per invertire l'ordine degli elementi dell'array ho usato la dot notation reverse
+const reversedTeachers = teachers.reverse();
+console.log(reversedTeachers);
+
+// 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
+// con un nome di lunghezza maggiore o uguale a 5 caratteri
+// uso il ciclo for per cercare i nomi con lunghezza maggiore o uguale a 5 caratteri  lascando il nuovo array vuoto e che verrà riempito con i nomi che hanno questa caratteristica
+const longNames = [];
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i].length >= 5) {
+    longNames.push(teachers[i]);
+  }
+}
+console.log(longNames);
+
+// 3. Rimuovi 'Ed' dall'array teachers
+// ho cercato il valore dell'indice tramite indexOf
+const ed_index = teachers.indexOf("Ed");
+console.log(ed_index);
+//uso splice per rimuovere l'elemento Ed
+teachers.splice(5, 1);
+console.log(teachers);
+
+// 4. Verifica se 'Fabio' è presente nell'array teachers
+// e salva il risultato nella variabile isFabioPresent
+
+//PROCEDIMENTO
+// lascio vuoto il nuovo array affinché venga riempito con il valore trovato tramite il ciclo for
+// Nel ciclo for vado a chiedere di cercare la "i" all'interno della lunghezza dell'array teachers
+// utilizzo il minore perché altrimenti non mi troverebbe nulla se mettessi la ricerca per i valori maggiori "quindi fuori dal mio array" e vado per incremento con i++.
+// Uso una dichiarazione condizionale "if" con la condizione di trovarmi il valore di [i] all'interno dell'array teachers che sia uguale per valore e tipo === all'elemento di cui ho bisogno
+// nel blocco di codice chiedo di aggiungere alla lista tramite "push" il valore di [i] nell'array teachers che ha trovato tramite la condizione precedente
+const isFabioPresent = [];
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i] === "Fabio") {
+    isFabioPresent.push(teachers[i]);
+  }
+}
+console.log(isFabioPresent);
+
+// 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
+// per unire tutti gli insegnanti in una stringa uso la dot notation join(' qui decido se nella stringa devono essere separati dalla virgola ,  oppure dal trattino  - ')
+const teachersString = teachers.join(" , ");
+console.log(teachersString);
